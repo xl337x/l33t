@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+void task1()
+{
+	//make prog to ring ?
+	cout << "\a";
+
+}
+void task2()
+{
+	cout << "Dear Sir\\Madam,\n\n";
+	cout << "How are you?\n\n";
+	cout << "My name is \"Mohammed\" ,nice to meet you.\n";
+
+}
+void task3()
+{
+	cout << "Ali\tAhmed\tLina" <<endl;
+	cout << "fadi\tZain\tMona\n";
+}
+int main()
+{
+	// task();
+	//just call the task in this code =D
+
+	return 0;
+}
