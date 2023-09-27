@@ -25,3 +25,48 @@ int main()
 
 	return 0;
 }
+
+************************OR You Can use this code **************************************
+
+#include<iostream>
+using namespace std;
+void task1()
+{
+	//make prog to ring ?
+	cout << "\a";
+
+}
+void task2()
+{
+	cout << "Dear Sir\\Madam,\n\n";
+	cout << "How are you?\n\n";
+	cout << "My name is \"Mohammed\" ,nice to meet you.\n";
+
+}
+void task3()
+{
+	cout << "Ali\tAhmed\tLina" << endl;
+	cout << "fadi\tZain\tMona\n";
+}
+void tasks()
+{
+	cout << "Enter Task to run? 1=sound,2=sir\\madam,3=names\n";
+	int task ;
+	cin >> task;
+	if (task == 1)
+		task1();
+	else if (task == 2)
+		task2();
+	else if (task == 3)
+		task3();
+	else
+		cout << "Numbers of Task From 1 to 3,please choose valid num\n";
+
+}
+int main()
+{
+	tasks();
+	//just enter the task number in this code =D
+
+	return 0;
+}
