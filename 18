@@ -1,0 +1,95 @@
+#include<iostream>
+using namespace std;
+string getname()
+{
+	string name;
+	cout << "Enter Your Name ?\n";
+	cin >> name;
+	return name;
+}
+int getage()
+{
+	int age;
+	cout << "Enter Your Age \n";
+	cin >> age;
+	return age;
+}
+string getcity()
+{
+	string city;
+	cout << "Enter Your city ?\n";
+	cin >> city;
+	return city;
+}
+string getrcountry()
+{
+	string country;
+	cout << "Enter Your Countrey ? \n";
+	cin >> country;
+	return country;
+}
+float getmonth_sal()
+{
+	float month_sal;
+	cout << "How much Your salary?" << endl;
+	cin >> month_sal;
+	return month_sal;
+
+}
+float getyear_sal()
+{
+	float year_sala;
+	cout << "How much Your annualsalary?" << endl;
+	cin >> year_sala;
+	return year_sala;
+
+}
+char getgender()
+{
+	char gender;
+	cout << "What is your gender ? m\\f?\n";
+	cin >> gender;
+	return gender;
+}
+bool getmarried()
+{
+	bool married;
+	cout << "Are You married? 0\\1" << endl;
+	cin >> married;
+	return married;
+}
+void stars()
+{
+	cout << "*********************************\n";
+}
+void info()
+{
+	stars();
+	getname();
+}
+
+int main()
+{
+	stars();
+	string name = getname();
+	int age = getage();
+	string city = getcity();
+	string country = getrcountry();
+	float sal_month = getmonth_sal();
+	float annual_sal = getyear_sal();
+	char gender = getgender();
+	bool married = getmarried();
+	stars();
+	cout << "Name: " << name << endl;
+	cout << "age: "<< age << endl;
+	cout << "City: " << city << endl;
+	cout << "Country: " << country << endl;
+	cout << "Salary per Month " << sal_month << endl;
+	cout << "annual salary: " << annual_sal << endl;
+	cout << "Gender: " << gender << endl;
+	cout << "married: " << married << endl;
+	stars();
+
+
+	return 0;
+}
