@@ -67,29 +67,61 @@ void info()
 	stars();
 	getname();
 }
+void sum()
+{
+	int num1 = 0;
+	int num2 = 0;
+	int num3 = 0;
+	cout << "Enter 3 Nums to calc the sum\n";
+	cin >> num1 >> num2 >> num3;
+	stars();
+	cout << "the sum is = " << num1 + num2 + num3;
+}
+void after5()
+{
+	cout << "what is your age?\n";
+	int age;
+	cin >> age;
+	cout << "After 5 Years you will be " << age + 5 << " years old.\n";
+}
 
 int main()
 {
-	stars();
-	string name = getname();
-	int age = getage();
-	string city = getcity();
-	string country = getrcountry();
-	float sal_month = getmonth_sal();
-	float annual_sal = getyear_sal();
-	char gender = getgender();
-	bool married = getmarried();
-	stars();
-	cout << "Name: " << name << endl;
-	cout << "age: "<< age << endl;
-	cout << "City: " << city << endl;
-	cout << "Country: " << country << endl;
-	cout << "Salary per Month " << sal_month << endl;
-	cout << "annual salary: " << annual_sal << endl;
-	cout << "Gender: " << gender << endl;
-	cout << "married: " << married << endl;
-	stars();
-
+	int num;
+	cout << "Enter the task?" << endl;
+	cin >> num;
+	if (num == 1)
+	{
+		stars();
+		string name = getname();
+		int age = getage();
+		string city = getcity();
+		string country = getrcountry();
+		float sal_month = getmonth_sal();
+		float annual_sal = getyear_sal();
+		char gender = getgender();
+		bool married = getmarried();
+		stars();
+		cout << "Name: " << name << endl;
+		cout << "age: " << age << endl;
+		cout << "City: " << city << endl;
+		cout << "Country: " << country << endl;
+		cout << "Salary per Month " << sal_month << endl;
+		cout << "annual salary: " << annual_sal << endl;
+		cout << "Gender: " << gender << endl;
+		cout << "married: " << married << endl;
+		stars();
+	}
+	else if (num == 2)
+	{
+		sum();
+	}
+	else if (num == 3)
+	{
+		after5();
+	}
+	else
+		cout << "enter valid num\n";
 
 	return 0;
 }
