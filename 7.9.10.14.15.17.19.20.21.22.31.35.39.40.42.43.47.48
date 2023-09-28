@@ -1,0 +1,288 @@
+#include<iostream>
+#include <iomanip>
+using namespace std;
+void sum(int a,int b)
+{
+	cout << "A + B = " << a + b << endl;
+}
+void subtract(int a, int b)
+{
+	cout << "A - B = " << a - b << endl;
+}
+void multiple(int a, int b)
+{
+	cout << "A * B = " << a * b << endl;
+}
+void divide(int a, int b)
+{
+	cout << "A / B = " << a / b << endl;
+}
+void modulo(int a, int b)
+{
+	cout << "A % B = " << a %b << endl;
+}
+void task7()
+{
+	int num1;
+	cout << "Enter Number to calc the Half of the number\n";
+	cin >>num1;
+	int half_num;
+	half_num = num1 / 2;
+	cout << "half of " << num1 << " is " << half_num << endl;
+}
+void task9()
+{
+	cout << "Enter 3 Numbers to calc the Sum =D\n";
+	cout << "--------------------------------------\n";
+	cout << "enter the first num?\n";
+	int a, b, c;
+	cin >> a;
+	cout << "enter the secnd num?\n";
+	cin >> b;
+	cout << "enter the third num?\n";
+	cin >> c;
+	int sum = a + b + c;
+	cout << "The Sum of the three numbers is : " << sum << endl;
+
+}
+void task10()
+{
+	cout << "Enter 3 Numbers to calc the AVG =D\n";
+	cout << "--------------------------------------\n";
+	cout << "enter the first num?\n";
+	int a, b, c;
+	cin >> a;
+	cout << "enter the secnd num?\n";
+	cin >> b;
+	cout << "enter the third num?\n";
+	cin >> c;
+	int avg=(a + b + c) / 3;
+	cout << "The AVG of the three numbers is : " << avg<<endl;
+}
+void task14()
+{
+	cout << "Enter Two numbers to swap !\n";
+	int first_num;
+	int second_num;
+	int temp;
+	cout << "-------------------------------" << endl;
+	cout << "Enter the first num?\n";
+	cin >> first_num;
+	cout << "Enter the secnd num?\n";
+	cin >> second_num;
+	cout << "the first num is : " << first_num << endl;
+	cout << "the Sec num is : " << second_num << endl;
+	temp = first_num;
+	first_num = second_num;
+	second_num = temp;
+	
+
+	cout << "the first num is : " << first_num << endl;
+	cout << "the Sec num is : " << second_num << endl;
+
+
+}
+void task15()
+{
+	cout << "We Will calc The rectangle area\n";
+	float a, b;
+	cout << "Enter the width \n";
+	cin >> a;
+	cout << "Enter the height \n";
+	cin >> b;
+	float area = a * b;
+	cout << "the are of this rectangle is = " << area << endl;
+}
+void task17()
+{
+	cout << "We Will calc The Triangle area\n";
+	float a, b;
+	cout << "Enter the width \n";
+	cin >> a;
+	cout << "Enter the height \n";
+	cin >> b;
+	float area = 0.5 * a * b;
+	cout << "the are of this Triangle is = " << area << endl;
+}
+void task19()
+{
+	cout << "We Will calc The Circle Area Through Diameter\n";
+	float a;
+	cout << "Enter the Diameter \n";
+	cin >> a;
+	float area = ((22 / 7) * (	a * a))/ 4;
+	cout << "the area of this Circle Area Through Diameter= " << area << endl;
+}
+void task20()
+{
+	int a;
+	cin >> a;
+	float area= (3.14 * a * a) / 4;
+	cout << setprecision(5)<< area;
+}
+void task21()
+{
+	float a;
+	cout << "enter L\n";
+	cin >> a;
+	float area = (a * a) / (4 * 3.14);
+	cout << area;
+}
+void task22()
+{
+	float a, b;
+	cin >> a >> b;
+	float a_and_b = (2 * a) + (b);
+	float a_b = (2 * a) - (b);
+	float ab = a_b / a_and_b;
+	float area;
+	area = 3.14 * ((b * b) / 4) * ab;
+	cout << area;
+}
+void task31()
+{
+	int a;
+	cin >> a;
+	cout << pow(a, 2) << endl;
+	cout << pow(a, 3) << endl;
+	cout << pow(a, 4) << endl;
+
+}
+void task35()
+{
+	float pen, nick, dimes, quart, dollar;
+	cout << "pen?" << endl;
+	cin >> pen;
+	cout << "nick" << endl;
+	cin >> nick;
+	cout << "dimes" << endl;
+	cin >> dimes;
+	cout << "quarts?" << endl;
+	cin >> quart;
+	cout << "dollar?" << endl;
+	cin >> dollar;
+//en = 1;
+//ollar = 100 * pen;
+//uart = 25 * pen;
+//imes = 10 * pen;
+//ick = 5 * pen;
+	cout << pen  +  nick * 5  +  dimes * 10  +  quart * 25 +  dollar * 100 << " Pennies"<<endl;
+	cout << setprecision(3) << (pen + nick * 5 + dimes * 10 + quart * 25 + dollar * 100) / 100 << " Dollars" << endl;
+}
+
+void task40()
+{
+	float ser, tax, pell;
+	cin >> pell;
+	ser = pell * 0.1;
+	pell = ser + pell;
+	tax = pell * 0.16;
+	pell = pell + tax;
+	cout << pell;
+
+}
+void task42()
+{
+	int days, hours, minutes, sec;
+	cin >> days >> hours >> minutes >> sec;
+	//ys = 24 * 60 * 60;
+//ours = 60 * 60;
+//inutes = 60 * 60;
+
+	cout << (days * 24 * 60 * 60) + hours * (60 * 60) + minutes * (60) + sec;
+}
+void task43()
+{
+	int sec;
+	cin >>  sec;
+	int sec_p_day = 24 * 60 * 60;
+	int sec_p_hour = 60 * 60;
+	int sec_p_min = 60;
+
+	int num_day = sec / sec_p_day;
+	int num_hours = (num_day % sec_p_day) / sec_p_hour;
+	int num_min = num_hours;
+
+
+}
+int main()
+{
+	cout << "Enter task number?\n";
+	int task;
+	cin >> task;
+	if (task == 1)
+	{
+		cout << "Enter first number?\n";
+		int a, b;
+		cin >> a;
+		cout << "Enter Secnd number?\n";
+		cin >> b;
+		sum(a, b);
+		subtract(a, b);
+		multiple(a, b);
+		divide(a, b);
+		modulo(a, b);
+	}
+	else if (task == 7)
+	{
+		task7();
+	}
+	else if (task == 9)
+	{
+		task9();
+	}
+	else if (task == 10)
+	{
+		task10();
+	}
+	else if (task == 14)
+	{
+		task14();
+	}
+	else if (task == 15)
+	{
+		task15();
+	}
+	else if (task == 17)
+	{
+		task17();
+	}
+	else if (task == 19)
+	{
+		task19();
+	}
+	else if (task == 20)
+	{
+		task20();
+	}
+	else if (task == 21)
+	{
+		task21();
+	}
+	else if (task == 22)
+	{
+		task22();
+	}
+	else if (task == 31)
+	{
+		task31();
+	}
+	else if (task == 35)
+	{
+		task35();
+	}
+	else if (task == 40)
+	{
+		task40();
+	}
+	else if (task == 42)
+	{
+		task42();
+	}
+	else if (task == 43)
+	{
+		cout << "This task is under construction" << endl;
+//task42();
+	}
+	return 0;
+}
