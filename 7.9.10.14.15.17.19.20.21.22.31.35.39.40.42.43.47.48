@@ -1,5 +1,6 @@
 #include<iostream>
 #include <iomanip>
+#include<cmath>
 using namespace std;
 void sum(int a,int b)
 {
@@ -184,25 +185,61 @@ void task40()
 void task42()
 {
 	int days, hours, minutes, sec;
+	cout << "Enter The day the the hours then the minutes then the seconds\n";
 	cin >> days >> hours >> minutes >> sec;
 	//ys = 24 * 60 * 60;
 //ours = 60 * 60;
 //inutes = 60 * 60;
 
-	cout << (days * 24 * 60 * 60) + hours * (60 * 60) + minutes * (60) + sec;
+	cout << (days * 24 * 60 * 60) + (hours * (60 * 60) )+ (minutes * (60) )+ (sec);
 }
 void task43()
 {
-	int sec;
-	cin >>  sec;
-	int sec_p_day = 24 * 60 * 60;
-	int sec_p_hour = 60 * 60;
-	int sec_p_min = 60;
+	float second;
+	cout << "conver seconds to \" day : hours : minutes : seconds \: ";
+	cout << "Enter The number of seconds ";
+	cin >> second;
 
-	int num_day = sec / sec_p_day;
-	int num_hours = (num_day % sec_p_day) / sec_p_hour;
-	int num_min = num_hours;
+	int  day, dday, hour, dh, minute, dm, secs;
+	day = second / 86400;
+	dday = fmod(second,86400);
+	hour = dday / 3600;
+	dh = fmod(dday,3600);
+	minute = dh / 60;
+	dm = fmod(dh,60);
+	cout << "Days : Hours : Minutes : Seconds \n";
+	cout <<day << " : " << hour << " : " << ((minute)) << " : " << ((dm)) << endl;
+	
+	}
 
+void task47()
+{
+	cout << "Task 47 loan ammount" << endl;
+	cout << "Enter The total loan?" << endl;
+	int loan;
+	cin >> loan;
+	cout << "How much you will pay per month?" << endl;
+	int payment;
+	cin >> payment;
+	cout << "You will pay for a " << loan / payment << " :months" << endl;
+}
+
+void task48()
+{
+	cout << "Enter your loan ammount " << endl;
+	int loan;
+	cin >> loan;
+	cout << "How many month do you need to pay? \n";
+	int months;
+	cin >> months;
+	cout << "you will pay ever month " << loan / months;
+}
+
+void taskodd()
+{
+	cout << "Enter num to extract odd's" << endl;
+	int a;
+	cin >> a;
 
 }
 int main()
@@ -281,8 +318,19 @@ int main()
 	}
 	else if (task == 43)
 	{
-		cout << "This task is under construction" << endl;
-//task42();
+
+		task43();
 	}
+	else if (task == 47)
+	{
+		task47();
+	}
+	else if (task == 48)
+	{
+		task48();
+	}
+
+
+
 	return 0;
 }
