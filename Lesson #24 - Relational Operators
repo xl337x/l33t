@@ -1,0 +1,22 @@
+#include<iostream>
+#include <iomanip>
+#include<cmath>
+using namespace std;
+int main()
+{
+	cout << "Please Enter The First Number ? \n";
+	int num1;
+	cin >> num1;
+	cout << "Please Enter The Secnd Number ? \n";
+	int num2;
+	cin >> num2;
+	
+	cout << num1 << " = " << num2 << " is " << (num1 == num2) << endl;
+	cout << num1 << " !	= " << num2 << " is " << (num1 != num2) << endl;
+	cout << num1 << " > " << num2 << " is " << (num1 > num2) << endl;
+	cout << num1 << " < " << num2 << " is " << (num1 < num2) << endl;
+	cout << num1 << " >= " << num2 << " is " << (num1 >= num2) << endl;
+	cout << num1 << " <= " << num2 << " is " << (num1 <= num2) << endl;
+
+	return 0;
+}
