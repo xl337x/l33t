@@ -1,0 +1,108 @@
+#include<iostream>
+using namespace std;
+void task4()
+{
+	int age;
+	bool license;
+
+	cout << "How old are you ? \n";
+	cin >> age;
+
+	cout << "Do you have license? 1 For Yes 0 For No \n";
+	cin >> license;
+
+	if (age >= 21 && license == 1)
+	{
+		cout << "Congtrats , you are Hired! \n";
+	}
+	else
+	{
+		cout << "We are sorry , you are NOT hired :(\n";
+	}
+
+	cout << "Welcome to , lnc shemerz company.\n";
+}
+
+void task8()
+{
+	int mark;
+
+	cout << "Hello , please enter your mark to check you are pass of fail\n";
+	cin >> mark;
+
+	if (mark >= 50)
+	{
+		cout << "Congrats , you are PASS";
+	}
+	else
+	{
+		cout << "sorry for that , you are FAIL";
+	}
+	cout << "." << endl;
+}
+void task11()
+{
+	cout << "Please enter your three marks ! \n";
+	float m1, m2, m3,avg;
+
+	cout << "Please enter your first mark  \n";
+	cin >> m1;
+
+	cout << "Please enter your second mark  \n";
+	cin >> m2;
+
+	cout << "Please enter your third mark  \n";
+	cin >> m3;
+	
+	avg = ((m1 + m2 + m3) / 3);
+
+	if (avg>=50)
+	{
+		cout << "Yor AVG is = " << avg;
+		cout << "\nCongrats , you are PASS";
+	}
+	else
+	{
+		cout << "sorry for that , you are FAIL";
+	}
+	cout << "." << endl;
+	}
+
+void task24()
+{
+	cout << "Enter Your Age ?\n";
+	int age;
+	cin >> age;
+	if (age >= 18 && age <= 45)
+	{
+		cout << "Valid Age , Welcome!\n";
+	}
+	else
+	{
+		cout << "Leave Now!\n";
+	}
+}
+void task49()
+{
+	int pin, p_pin;
+	pin = 1234;
+	cout << "enter the PIN to check balance? \n";
+	cin >> p_pin;
+	if (p_pin == pin)
+	{
+		cout << "Your balance is 7500\n";
+	}
+	else
+	{
+		cout << "Invalid PIN !\n";
+	}
+}
+
+int main()
+{
+
+	task49();
+		
+		
+return 0;
+}
