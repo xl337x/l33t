@@ -1,0 +1,201 @@
+#include<iostream>
+using namespace std;
+void task33()
+{
+	int grade;
+
+	cout << "Enter Your Grade ? \n";
+	cin >> grade;
+	if (grade >= 90 )//&& grade  100)
+	{
+		cout << "A\n";
+	}
+	else if (grade >= 80 && grade <= 89)
+	{
+		cout << "B\n";
+
+	}
+	else if (grade >= 70 && grade <= 79)
+	{
+		cout << "C\n";
+	}
+	else if (grade >= 60 && grade <= 69)
+	{
+		cout << "D\n";
+	}
+	else if (grade >= 50 && grade <= 59)
+	{
+		cout << "E\n";
+
+	}
+	else
+	{
+		cout << "F\n";
+	}
+}
+void task34()
+{
+	cout << "Enter The Total Sales\n";
+	int totalsales;
+	cin >> totalsales;
+	if (totalsales > 50000 && totalsales <= 100000)
+	{
+		cout << "Percentage 5%\n";
+		cout << totalsales << " * " << "5% " << totalsales * .05 << endl;
+	}
+	else if (totalsales > 100000 && totalsales <= 500000)
+	{
+		cout << "Percentage 3%\n";
+		cout << totalsales << " * " << "3% = " << totalsales * .03 << endl;
+	}
+
+	else if (totalsales > 500000 && totalsales <= 1000000)
+	{
+		cout << "Percentage 2%\n";
+		cout << totalsales << " * " << "2% = " << totalsales * .02 << endl;
+	}
+	else if (totalsales > 1000000 )
+	{
+		cout << "Percentage 1%\n";
+		cout << totalsales << " * " << "1% = " << totalsales * .01 << endl;
+	}
+	else
+	{
+		cout << "Percentage 0%\n";
+		cout << totalsales << " * " << "0% = " << totalsales  << endl;
+	}
+}
+void task36()
+{
+	int num1, num2;
+	cout << "Enter The First Number \n";
+	cin >> num1;
+	cout << "Enter The Second Number \n";
+	cin >> num2;
+	cout << "choose the operation method + - * / \n";
+	string op;
+	cin >> op;
+	if (op == "*")
+	{
+		cout << num1 << " * " << num2 << " = " << num1 * num2;
+	}
+	else if (op == "+")
+	{
+		cout << num1 << " + " << num2 << " = " << num1 + num2;
+	}
+	else if (op == "-")
+	{
+		cout << num1 << " - " << num2 << " = " << num1 - num2;
+	}
+	else if (op == "/")
+	{
+		cout << num1 << " / " << num2 << " = " << num1 / num2;
+	}
+	else
+	{
+		cout << "re-enter valid number\n";
+	}
+}
+void task44()
+{
+	cout << "Enter number from 1-7 to tell you what number equal to day\n";
+	int day;
+	cin >> day;
+	if (day == 1)
+	{
+		cout << "it's Sunday\n";
+	}
+	else if (day == 2)
+	{
+		cout << "it's Monday\n";
+	}
+	else if (day == 3)
+	{
+		cout << "it's Tuesday\n";
+	}
+	else if (day == 4)
+	{
+		cout << "it's Wednesday\n";
+	}
+	else if (day == 5)
+	{
+		cout << "it's Thursday\n";
+	}
+	else if (day == 6)
+	{
+		cout << "it's Friday\n";
+	}
+	else if (day == 7)
+	{
+		cout << "it's Saturday\n";
+	}
+	else
+	{
+		cout << "Enter Valid num from 1 to 7\n";
+	}
+}
+void task45()
+{
+	cout << "Enter number from 1-12 to tell you what number equal to Month\n";
+	int day;
+	cin >> day;
+	if (day == 1)
+	{
+		cout << "it's January\n";
+	}
+	else if (day == 2)
+	{
+		cout << "it's February \n";
+	}
+	else if (day == 3)
+	{
+		cout << "it's March \n";
+	}
+	else if (day == 4)
+	{
+		cout << "it's April \n";
+	}
+	else if (day == 5)
+	{
+		cout << "it's May\n";
+	}
+	else if (day == 6)
+	{
+		cout << "it's June\n";
+	}
+	else if (day == 7)
+	{
+		cout << "it's July\n";
+	}
+	else if (day == 8)
+	{
+		cout << "it's August\n";
+	}
+	else if (day == 9)
+	{
+		cout << "it's Septemper\n";
+	}
+	else if (day == 10)
+	{
+		cout << "it's October\n";
+	}
+	else if (day == 11)
+	{
+		cout << "it's November\n";
+	}
+	else if (day == 12)
+	{
+		cout << "it's December \n";
+	}
+	else
+	{
+		cout << "Enter Valid num from 1 to 12\n";
+	}
+}
+
+int main()
+{
+
+
+return 0;
+}
