@@ -1,0 +1,103 @@
+#include <iostream>
+using namespace std;
+enum enmonth { jan = 1, feb = 2, mar = 3, apr = 4, may = 5, jun = 6, jul = 7, aug = 8, sep = 9, oct = 10, nov = 11, dec = 12 };
+void task44v2()
+{
+    int num1, num2;
+    char op;
+    cout << "We will try the calaculator ,so lets try\n";
+    cout << "Enter First num \n";
+    cin >> num1;
+    system("color 4F");
+    cout << "Enter First num \n";
+    cin >> num2;
+    system("color 3B");
+
+    cout << "choose + or * or - or / \n";
+    cout << "(1) plus \"+\"\n";
+    cout << "(2) minus \"-\"\n";
+    cout << "(3) multi \"*\"\n";
+    cout << "(4) divide \"/\"\n";
+
+    cin >> op;
+    switch (op)
+    {
+    case '+':
+        cout << num1 << " + " << num2 << " = " << num1 + num2 << endl;
+        break;
+
+    case '-':
+        cout << num1 << " - " << num2 << " = " << num1 - num2 << endl;
+        break;
+
+    case '*':
+        cout << num1 << " * " << num2 << " = " << num1 * num2 << endl;
+        break;
+
+    case '/':
+        cout << num1 << " / " << num2 << " = " << num1 / num2 << endl;
+        break;
+    }
+}
+void task45v2()
+{
+    enmonth month;
+    cout << "Enter Num From 1 to 12 to tell you what is the month \n";
+    int mon;
+    cin >> mon;
+    system("color 3F");
+    month = (enmonth)mon;
+
+    switch(month)
+    {
+    case jan:
+        cout << "jan";
+        break;
+      case 2:
+          cout << "feb";
+          break;
+      case 3:
+          cout << "march";
+          break;
+      case 4:
+          cout << "april";
+          break;
+      case 5:
+          cout << "may";
+          break;
+      case 6:
+          cout << "june";
+          break;
+      case 7:
+          cout << "july";
+          break;
+      case 8:
+          cout << "august";
+          break;
+      case 9:
+          cout << "septemper";
+          break;
+      case 10:
+          cout << "october";
+          break;
+      case 11:
+          cout << "november";
+          break;
+      case 12:
+          cout << "december";
+          break;
+
+      default:
+          cout << "Num is wrong! \n";
+          break;
+}
+
+
+}
+
+int main() {
+
+
+    return 0;
+}
+
