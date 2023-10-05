@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+void task26()
+{
+	cout << "Good Morning , Enter Number to enumerate from 1 to your num \n";
+	int num;
+	cin >> num;
+	for (int i = 1; i <= num; i++)
+	{
+		cout << i << endl;
+	}
+}
+void task27()
+{
+	cout << "Good Morning , Enter Number to enumerate from your num to one \n";
+	int num;
+	cin >> num;
+	for (int i = num; i >= 1; i--)
+	{
+		cout << i << endl;
+	}
+
+}
+int main()
+{
+	task27();
+	return 0;
+}
