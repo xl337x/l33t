@@ -1,0 +1,57 @@
+#include<iostream>
+using namespace std;
+enum enwdays{sunday=1,monday=2,tuesday=3,wednesday=4,thursday=5,friday=6,saturday=7};
+void stars()
+{
+	cout << "********************\n";
+}
+enwdays read_day()
+{
+	cout << "Enter day num";
+	int wday;
+	cin >> wday;
+	return (enwdays)wday;
+}
+string printday(enwdays wdays)
+{
+	switch (wdays)
+	{
+	case enwdays::sunday:
+		return "Sunday";
+		break;
+	case enwdays::monday:
+		return"Monday";
+		break;
+
+	case enwdays::tuesday:
+		return "tuesday";
+		break;
+
+	case enwdays::wednesday:
+		return"wednesday";
+		break;
+
+	case enwdays::thursday:
+		return"thursday";
+		break;
+
+	case enwdays::friday:
+		return "friday";
+		break;
+
+	case enwdays::saturday:
+		return"saturday";
+		break;
+
+	default:
+		return"Wrong Number!\n";
+		break;
+	}
+}
+int main()
+{
+	cout<<"Day is "<<printday(read_day());
+
+
+	return 0;
+}
