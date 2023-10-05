@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+void task26()
+{
+	cout << "Good Morning , Enter Number to enumerate from 1 to your num \n";
+	int num;
+	cin >> num;
+	for (int i = 1; i <= num; i++)
+	{
+		cout << i << endl;
+	}
+}
+void task27()
+{
+	cout << "Good Morning , Enter Number to enumerate from your num to one \n";
+	int num;
+	cin >> num;
+	for (int i = num; i >= 1; i--)
+	{
+		cout << i << endl;
+	}
+
+}
+void task28()
+{
+	int num,sum=0;
+	cout << "Enter Num To calc the Sum of all odd's numbers \n ";
+	cin >> num;
+	for (int i = 0; i <= num; i++)
+	{
+		if (i % 2 != 0)
+		{
+			sum = sum+i;
+			//cout << num;
+		}
+		
+	}
+	cout << sum;
+}
+
+int main()
+{
+	task28();
+	return 0;
+}
