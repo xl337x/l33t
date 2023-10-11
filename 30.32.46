@@ -1,0 +1,62 @@
+#include<iostream>
+using namespace std;
+int task30()
+{
+	int number;
+	cout << "What The Num? to Print Fraction?\n";
+	cin >> number;
+	int frac = 1;
+	for (int counter = 1; counter <= number; counter++)
+	{
+		frac = counter * frac;
+		//cout << frac << endl;
+	}
+	cout << frac;
+	return frac;
+}
+void task32()
+{
+	cout<<"Enter Num To calc the power of the number\n";
+	cout << "Enter The Number? \n";
+	int number;
+	int pow;
+	cin >> number;
+	cout << "Enter The Power? \n";
+	cin >> pow;
+	int pp=1;
+	if (pow == 0)
+	{
+		cout << "pow of 0 is = 1" << endl;
+	}
+	else if (pow < 0)
+	{
+		cout << "Enter Positive Num\n";
+	}
+	else
+	{
+		for (int i = 1; i <= pow; i++)
+		{
+			pp = number * pp;
+		}
+		cout << "pow of " << pow << " = " << pp;
+	}
+		
+}
+
+void task46()
+{
+	for (int i = 65; i <= 90; i++)
+	{
+		cout << char(i) << " ";
+	}
+}
+
+int main()
+{
+
+
+	
+
+
+	return 0;
+}
