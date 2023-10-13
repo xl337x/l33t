@@ -1,0 +1,114 @@
+#include<iostream>
+using namespace std;
+void taskAA_ZZ()
+{
+	for (int i = 65; i <= 90; i++)
+	{
+		cout << "*********" << char(i) << "*******" << endl;
+
+		for (int j = 65; j <= 90; j++)
+		{
+			cout << "* \t" << char(i) << char(j) << "\t*" << endl;
+
+		}
+		///cout << "**********" <<"**********" << endl;
+
+	}
+}
+void rev_triagle()
+{
+	for (int j = 1; j <= 10; j++)
+	{
+		for (int i = 10; i >= j;i--)
+		{
+			cout << "*";
+
+		}
+		cout << endl;
+	}
+}
+
+void num_rev_triangle()
+{
+	for (int i = 10; i >= 1; i--)
+	{
+
+		for (int j = 1; j <= i; j++)
+		{
+			cout << j;
+		}
+
+		cout << endl;
+	}
+}
+
+void asd() 
+{
+	for (int i = 1; i <= 10; i++)
+	{
+		for (int j = 1; j <= i; j++)
+		{
+			cout << j;
+		}
+		cout << endl;
+	}
+}
+
+void asd1()
+{
+	for (int i = 10; i >= 1; i--)
+	{
+
+		for (int j = 1; j <= i; j++)
+		{
+			cout << j;
+		}
+		cout << endl;
+	}
+}
+void asd2()
+{
+	for (int i = 65; i <= 70; i++)
+	{
+		for (int j = 65; j < i; j++)
+		{
+			cout << char(j);
+		}
+		cout << endl;
+	}
+}
+
+void asd3()
+{
+	for (int i = 1; i <= 10; i++)
+	{
+
+		for (int j=i;j<=10;j++)
+		{
+			cout << j;
+		}
+		cout << endl;
+	}
+}
+
+void tas()
+{
+	for (int i = 1; i <= 100; i++)
+	{
+		cout<<"obz el mzr6ah"<<endl;
+		for (int i = 1; i <= 1; i++)
+		{
+			cout << "mhnd el mzr6ah" << endl;
+			system("color 2F");
+
+		}
+		system("color 4f");
+
+	}
+}
+int main()
+{
+	
+
+		return 0;
+}
