@@ -1,0 +1,45 @@
+#include<iostream>
+using namespace std;
+void read(int &len,int array[100])
+{
+	
+	cout << "Enter How many numbers ?> \n";
+	cin >> len;
+	for (int i = 0; i <= len-1; i++)
+	{
+		cout << "Enter The " << i + 1 << endl;
+		cin >> array[i];
+	}
+}
+void print(int len, int array[100])
+{
+	for (int i = 0; i <= len - 1; i++)
+	{
+		cout << "The Num [" << i + 1 << "] is = " << array[i] << endl;
+	}
+}
+int sum(int len, int array[100])
+{
+	int summ = 0;
+	for (int i = 0; i <= len - 1; i++)
+	{
+		summ += array[i];
+	}
+	return summ;
+}
+void avg(int len, int array[100])
+{
+	float average= sum(len, array);
+	cout << "The AVG is = " << sum(len, array)/len << endl;
+
+}
+int main()
+{
+	int len;
+	int array[100];
+	read(len, array);
+	print(len, array);
+	cout << "The Sum is = " << sum(len, array) << endl;
+	avg(len, array);
+	return 0;
+}
